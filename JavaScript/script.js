@@ -12,19 +12,19 @@ elForm.addEventListener("submit" , (evt) =>{
     
     let strton = Number(elInput.value);
     let chance = elChance.textContent--
-     
-     if(chance === 0 || chance < 2){
+    
+    if (random === strton ){
+      elResult.textContent = `topdingiz rostandham ${strton} edi , Kundaligizi apkesez 5 qo'yberaman`;
+      elSend.disabled = true;
+      elInput.disabled = true;
+   }
+     else if(chance === 0 || chance < 2){
         elSend.disabled = true;
         elInput.disabled = true;
         elResult.textContent = `You have spent all your chances, The Number was ${random}`;
      }
      else if (strton > 100 || strton < 0){
         elResult.textContent = "TITLE ni o'qing yahshilab";
-     }
-     else if (random === strton ){
-        elResult.textContent = `topdingiz rostandham ${strton} edi , Kundaligizi apkesez 5 qo'yberaman`;
-        elSend.disabled = true;
-        elInput.disabled = true;
      }
      else if (random > strton){
         elResult.textContent = "SIZ kiritgan son computer o'ylagandan kakichkina";
