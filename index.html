@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tailwind.min.css">
+    <title>Find Number</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center text-4xl font-bold mb-20 overflow-hidden text-white">
+            <span>Find</span> The number that computer thought
+        </h1>
+       <div class="block">
+                     <form action="" id="form-js">
+                        <input id="input-js" type="text" placeholder="enter the random number" class="py-2 px-4"><button id="input-btn" class="text-white">send</button>
+                     </form>
+           <div class="blocks mt-8">
+                     <div class="chances text-white">Chances : <span id="chance" class="chance text-white"></span></div>
+                     <button id="refresh" class="refresh text-white">refresh</button>
+            </div>
+        <div class="result text-white" id="result"></div>
+       </div>
+    </div>
+    <script src="./JavaScript/script.js"></script>
+</body>
+</html>
